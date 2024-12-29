@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="First Egypt Wife AI - new meme coin with AI and ancient Egyptian spirit. Ticker: $egypt_wife.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Egypt Wife AI — $egypt_wife</title>
+  <style>
+    /* RESET / BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #faf3e0 0%, #e7d7b0 100%); /* Общий градиент для фона */
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+    header {
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 1rem;
+      background: linear-gradient(90deg, #b29661 0%, #ddc185 100%); /* Градиент шапки */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #3d2c1b;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      font-size: 1rem;
+      color: #57442a;
+    }
+
+    /* NAVIGATION */
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #fdf5e6;
+      border-radius: 4px;
+      color: #3d2c1b;
+      font-weight: 600;
+      transition: transform 0.2s, background 0.3s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a:hover {
+      transform: translateY(-2px);
+      background: #f7e8c4;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #f7ead1 0%, #ead6ae 100%);
+    }
+    .hero-img {
+      max-width: 300px;
+      width: 80%;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: #3d2c1b;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #444;
+    }
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      background: linear-gradient(45deg, #dcb35c, #edd49f);
+      color: #3d2c1b;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .cta-buttons a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* ROADMAP */
+    .roadmap {
+      width: 100%;
+      padding: 2rem 1rem;
+      background: #fdfaf3;
+    }
+    .roadmap h3 {
+      text-align: center;
+      font-size: 2rem;
+      color: #3d2c1b;
+      margin-bottom: 1.5rem;
+    }
+    .phases {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .phase {
+      background: #fef7e7;
+      border-left: 5px solid #dcb35c;
+      padding: 1rem 1.5rem;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    }
+    .phase h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #3d2c1b;
+    }
+    .phase p {
+      margin-left: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #444;
+    }
+
+    /* BUY SECTION */
+    #buy {
+      width: 100%;
+      padding: 2rem 1rem;
+      text-align: center;
+      background: linear-gradient(135deg, #faecd9 0%, #f4ddb7 100%);
+    }
+    #buy h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #3d2c1b;
+    }
+    #buy p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    /* CONTACT SECTION */
+    #contact {
+      width: 100%;
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #fdf5e6;
+    }
+    #contact h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #3d2c1b;
+    }
+    #contact p {
+      max-width: 600px;
+      margin: 0 auto 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #444;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .contact-links a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(45deg, #cfa852, #edd49f);
+      border-radius: 4px;
+      color: #3d2c1b;
+      font-weight: 600;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .contact-links a:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(45deg, #f7efcb, #b68c3d);
+    }
+
+    /* FOOTER */
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      background: linear-gradient(90deg, #b29661 0%, #ddc185 100%);
+      color: #3d2c1b;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+
+    /* RESPONSIVE */
+    @media (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+      }
+      .hero-img {
+        max-width: 400px;
+        margin-right: 2rem;
+      }
+      .hero h2 {
+        font-size: 2.4rem;
+      }
+      .phases {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>First Egypt Wife AI</h1>
+    <p>The Meme Coin of Ancient Egyptian Soul + Modern AI</p>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#buy">How to Buy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <img src="egypt-wife.jpg" alt="First Egypt Wife AI" class="hero-img" />
+    <div>
+      <h2>Welcome to $egypt_wife</h2>
+      <p>
+        <strong>First Egypt Wife AI</strong> is a unique fusion of meme culture, 
+        ancient Egyptian heritage, and cutting-edge AI technology. 
+        Join us on a journey to revolutionize crypto, forge new opportunities, 
+        and bring together a global community!
+      </p>
+      <div class="cta-buttons">
+        <a href="#buy">Buy $egypt_wife</a>
+        <a href="#whitepaper">Whitepaper</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP SECTION -->
+  <section id="roadmap" class="roadmap">
+    <h3>Roadmap</h3>
+    <div class="phases">
+      <div class="phase">
+        <h4>Phase 1 — Genesis</h4>
+        <p>- Smart contract creation<br>
+           - Website & social media launch<br>
+           - Community kickoff (Telegram)</p>
+      </div>
+      <div class="phase">
+        <h4>Phase 2 — Expansion</h4>
+        <p>- Whitepaper release<br>
+           - DEX listing (Uniswap/PancakeSwap)<br>
+           - Marketing collaborations<br>
+           - NFT collection launch</p>
+      </div>
+      <div class="phase">
+        <h4>Phase 3 — Growth</h4>
+        <p>- CEX listings (Gate, KuCoin, etc.)<br>
+           - AI-driven meme content platform<br>
+           - Charitable initiatives<br>
+           - Partnerships with other projects</p>
+      </div>
+      <div class="phase">
+        <h4>Phase 4 — Domination</h4>
+        <p>- Own blockchain development<br>
+           - Major global partnerships<br>
+           - Offline community events<br>
+           - Worldwide acceptance of $egypt_wife</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO BUY -->
+  <section id="buy">
+    <h3>How to Buy $egypt_wife</h3>
+    <p>
+      1. Install MetaMask or TrustWallet<br>
+      2. Fund your wallet with ETH/BNB (depending on the network)<br>
+      3. Go to Uniswap/PancakeSwap and input the $egypt_wife contract<br>
+      4. Swap the desired amount of tokens<br>
+      5. Welcome to the Egypt Wife AI family!
+    </p>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h3>Contact & Socials</h3>
+    <p>Stay connected to get the latest updates and join our vibrant community.</p>
+    <div class="contact-links">
+      <!-- CLICKABLE TWITTER AND TELEGRAM -->
+      <a href="https://x.com/egypt_wife" target="_blank">Twitter</a>
+      <a href="https://t.me/egypt_wife" target="_blank">Telegram</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 First Egypt Wife AI ($egypt_wife). All rights reserved.</p>
+  </footer>
+</body>
+</html>
